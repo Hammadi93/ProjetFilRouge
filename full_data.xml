@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+  <competition idCompetition="1" libelleCompetition="CAN 2017"/>
+  <equipe idEquipe="1" libelleEquipe="Equipe 1A"/>
+  <equipe idEquipe="2" libelleEquipe="Equipe 2A"/>
+  <equipe idEquipe="3" libelleEquipe="Equipe 3A"/>
+  <equipe idEquipe="4" libelleEquipe="Equipe 4A"/>
+  <equipe idEquipe="5" libelleEquipe="Equipe 1B"/>
+  <equipe idEquipe="6" libelleEquipe="Equipe 2B"/>
+  <equipe idEquipe="7" libelleEquipe="Equipe 3B"/>
+  <equipe idEquipe="8" libelleEquipe="Equipe 4B"/>
+  <personne idPersonne="1" nomPersonne="HAMMADI" prenomPersonne="Mezin" email="hmezin@norsys.fr" passwd="b054109103162fa601d0d95465827069" role="ROLE_ADMIN,ROLE_SALARIE"/>
+  <personne idPersonne="2" nomPersonne="AIT-TALEB" prenomPersonne="Youssef" email="yaittaleb@norsys.fr" passwd="8ba97607a1485ccdbe19745ed80cd52d" role="ROLE_SALARIE"/>
+  <personne idPersonne="3" nomPersonne="Oudli" prenomPersonne="Ouijdane" email="ooudli@norsys.fr" passwd="ca0f3b9c304e765ac2ffac82c06b075c" role="ROLE_SALARIE"/>
+  <poulle idPoulle="1" libellePoulle="A"/>
+  <poulle idPoulle="2" libellePoulle="B"/>
+  <pronostic/>
+  <rencontre idRencontre="1" idPoulle="1" idEquipe1="1" idEquipe2="2" idCompetition="1" butEquipe1="1" butEquipe2="1"/>
+  <rencontre idRencontre="2" idPoulle="1" idEquipe1="3" idEquipe2="4" idCompetition="1" butEquipe1="3" butEquipe2="4"/>
+  <rencontre idRencontre="3" idPoulle="1" idEquipe1="1" idEquipe2="3" idCompetition="1" butEquipe1="2" butEquipe2="1"/>
+  <rencontre idRencontre="4" idPoulle="1" idEquipe1="2" idEquipe2="4" idCompetition="1" butEquipe1="0" butEquipe2="0"/>
+  <rencontre idRencontre="5" idPoulle="1" idEquipe1="1" idEquipe2="4" idCompetition="1" butEquipe1="1" butEquipe2="0"/>
+  <rencontre idRencontre="6" idPoulle="1" idEquipe1="2" idEquipe2="3" idCompetition="1" butEquipe1="2" butEquipe2="3"/>
+  <rencontre idRencontre="7" idPoulle="2" idEquipe1="5" idEquipe2="8" idCompetition="1" butEquipe1="0" butEquipe2="1"/>
+  <rencontre idRencontre="8" idPoulle="2" idEquipe1="6" idEquipe2="7" idCompetition="1" butEquipe1="2" butEquipe2="0"/>
+  <rencontre idRencontre="9" idPoulle="2" idEquipe1="5" idEquipe2="6" idCompetition="1" butEquipe1="1" butEquipe2="1"/>
+  <rencontre idRencontre="10" idPoulle="2" idEquipe1="7" idEquipe2="8" idCompetition="1" butEquipe1="0" butEquipe2="1"/>
+  <rencontre idRencontre="11" idPoulle="2" idEquipe1="5" idEquipe2="7" idCompetition="1" butEquipe1="3" butEquipe2="0"/>
+  <rencontre idRencontre="12" idPoulle="2" idEquipe1="6" idEquipe2="8" idCompetition="1" butEquipe1="4" butEquipe2="0"/>
+  <rencontre idRencontre="13" idEquipe1="1" idEquipe2="8" idCompetition="1" butEquipe1="2" butEquipe2="1"/>
+  <rencontre idRencontre="14" idEquipe1="6" idEquipe2="4" idCompetition="1" butEquipe1="1" butEquipe2="0"/>
+  <rencontre idRencontre="15" idEquipe1="1" idEquipe2="6" idCompetition="1" butEquipe1="1" butEquipe2="2"/>
+</dataset>

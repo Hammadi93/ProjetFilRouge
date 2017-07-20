@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="base :: head" />
+<body>
+	<!-- Navigation -->
+	<div th:replace="base :: navigation"></div>
+
+	<!-- Page Content -->
+	<div class="container">
+		<div th:replace="base :: welcomeMessage"></div>
+		<!-- Team Members Row -->
+		<div class="row pagePronostic" style="margin-bottom: 6%;">
+			<div class="col-lg-12 ">
+				<h2 class="my-4">Mes Pronostics</h2>
+			</div>
+
+			<div class="col-lg-5 rencontre"
+				th:each="pronostic,loop : ${pronosticsPersonne}"
+				th:classappend="${loop.index}%2==0 ? insertSep : nothing ">
+				<div class="row">
+					<div class="col-lg-5 text-center">
+						<img class="rounded-circle img-fluid d-block mx-auto"
+							th:src="@{/resources/img/} + ${pronostic.rencontre.equipe1.imgEquipe}"
+							alt="" />
+						<h3 th:text="${pronostic.rencontre.equipe1.libelleEquipe}"></h3>
+						<p th:text="${pronostic.butEquipe1}" />
+					</div>
+					<div class="col-lg-2 text-center">
+						<h2 style="margin-top: 80%;">VS</h2>
+
+						<form th:action="@{'/pronostic/delete'}" method="post"
+							th:object="${pronostic}">
+							<input type="hidden" name="idPronostic"
+								th:value="${pronostic.idPronostic}" />
+							<button type="submit" name="deletePronostic" onclick=""
+								class="btn btn-outline-danger"
+								style="margin-left: -50%; margin-top: 200%">supprimer</button>
+						</form>
+					</div>
+					<div class="col-lg-5 text-center">
+						<img class="rounded-circle img-fluid d-block mx-auto"
+							th:src="@{/resources/img/} + ${pronostic.rencontre.equipe2.imgEquipe}"
+							alt="" />
+						<h3 th:text="${pronostic.rencontre.equipe2.libelleEquipe}"></h3>
+						<p th:text="${pronostic.butEquipe2}"></p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+
+	<!-- /.container -->
+	<!-- Footer -->
+	<footer th:replace="base :: footer"></footer>
+	<script type="text/javascript">
+	$(function() {
+		var str = "";
+		str += '<div class="col-lg-2">';
+		str += '<span class="v-separator"></span>';
+		str += '</div>';
+		$(".insertSep").after(str);
+	});
+	</script>
+</body>
+</html>

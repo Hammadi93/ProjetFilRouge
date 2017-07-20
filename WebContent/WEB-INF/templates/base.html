@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>TP Fill Rouge</title>
+<!-- Bootstrap Core CSS -->
+<link th:href="@{/resources/css/bootstrap.min.css}" rel="stylesheet" />
+<link th:href="@{/resources/css/genrale.css}" rel="stylesheet" />
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+</head>
+
+<body >
+	<!-- Navigation -->
+	<nav th:fragment="navigation"
+		class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
+		<button class="navbar-toggler navbar-toggler-right" type="button"
+			data-toggle="collapse" data-target="#navbarExample"
+			aria-controls="navbarExample" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="container">
+			<a class="navbar-brand" href="">	Bienvenue <small
+				th:text="${personneSession.nomPersonne}+' '+${personneSession.prenomPersonne} "></small></a>
+			<div class="collapse navbar-collapse" id="navbarExample">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item" id="competitions"><a class="nav-link"
+						href="/fillRouge/competitions">Competitions</a></li>
+					<li class="nav-item" id="mesPronostic"><a class="nav-link"
+						href="/fillRouge/pronostic/mesPronostic">Mes Pronostic</a></li>
+					<li class="nav-item" id="classement"><a class="nav-link"
+						href="/fillRouge/classement">Classement</a></li>
+					<li class="nav-item" id="rencontres"><a class="nav-link"
+						href="/fillRouge/rencontres" th:if="${#strings.contains(personneSession.role,'ADMIN')} ">gestion rencontres</a></li>
+					<li class="nav-item" id="logout"><a class="nav-link"
+						href="/fillRouge/logout">Deconnexion</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Page Content -->
+	<div class="container">
+		<h1 class="my-4" th:fragment="welcomeMessage">
+		
+		</h1>
+	</div>
+	<!-- /.container -->
+	<!-- Footer -->
+	<footer class="py-5 bg-inverse" th:fragment="footer" style="position: fixed; bottom: 0px;width: 100%;">
+		<div class="container">
+			<p class="m-0 text-center text-white">Copyright &copy; NORSYS
+				TECHNOMAKER 2017</p>
+		</div>
+		<!-- jQuery Version 3.1.1  -->
+		<script th:src="@{/resources/js/jquery.js}"></script>
+
+		
+		<!-- Tether -->
+		<script th:src="@{/resources/js/tether.min.js}"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script th:src="@{/resources/js/bootstrap.min.js}"></script>
+		
+		<!--Costum script -->
+		<script th:src="@{/resources/js/script.js}"></script>
+		<script th:inline="javascript">
+			$([['#'+${page}]]).addClass("active");
+			console.log([[${page}]]);
+		</script>
+
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="base :: head" />
+<body>
+	<!-- Navigation -->
+	<div th:replace="base :: navigation"></div>
+
+	<!-- Page Content -->
+	<div class="container">
+		<div th:replace="base :: welcomeMessage"></div>
+		<div class="row">
+			<div class="col-lg-12 ">
+				<h2 class="my-4">Poules</h2>
+			</div>
+
+			<div class="col-lg-4 poulleCard" th:each="poulle  : ${listPoulles}">
+				<div class="card" style="width: 20rem;">
+					<div class="card-block">
+						<h4 class="card-title" th:text="${poulle.libellePoulle}">LibellePoulle</h4>
+					</div>
+					<ul class="list-group list-group-flush">
+
+						<li class="list-group-item"
+							th:each="equipe  : ${poulle.listEquipe}">	
+							<img th:src="@{/resources/img/} + ${equipe.imgEquipe}" style="width: 20%; margin-right: 10%;" />
+							<h3 th:text="${equipe.libelleEquipe}"></h3>
+					</li>
+					</ul>
+					<div class="card-block">
+						<a th:href="@{/pronostic/}+${poulle.idPoulle}" class="card-link">Pronostiquer</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.container -->
+	<!-- Footer -->
+	<footer th:replace="base :: footer"></footer>
+</body>
+</html>

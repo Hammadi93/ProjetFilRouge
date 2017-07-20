@@ -1,0 +1,160 @@
+/*!
+ * Start Bootstrap - Round About (http://startbootstrap.com/)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+.navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    .v-separator {
+        content: "";
+        display: inline-block;
+        width: 0px;
+        height: 200px;
+        border-right: 1px solid #fafafa;
+        border-left: 1px solid #b4b4b4;
+        padding: 0;
+        position: relative;
+        margin-left: 50%;
+        margin-top: 20%;
+    }
+    .rencontre{
+         margin-bottom: 5%;
+    margin-top: 3%;
+    }
+    .equipePoulle{
+    text-align: left !important;
+    margin-left: 36% !important;
+    }
+    .pageRencontre{
+    margin-bottom: 3% !important;
+    }
+       span.badge {
+      display: inline-block;
+      min-width: 10px;
+      padding: 3px 7px;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1;
+      color: #fff; /* Couleur de texte : Blanc */
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: baseline;
+      background-color: #999; /* Couleur de l’arrière plan : Gris */
+      border-radius: 10px;
+   
+    }
+    /*  -----------------------------------------*/
+    .badge:empty {
+      display: none;
+    }
+    a.badge:hover,
+    a.badge:focus {
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .classement{
+        margin-bottom: 20%;
+           }
+    body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#comp ,#comp:focus, #comp:hover {
+    color: #292b2c;
+        text-decoration: none;
+}
+   
+   .error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }
+.middle{
+	margin:auto !important;
+	width:50% !important;
+}
+.poulleCard{
+	margin-bottom: 10% !important;
+}
+.btn-static-termine {
+  background-color: white;
+  border: 1px solid lightgrey;
+  cursor: default;
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+.btn-static-termine:active {
+  -moz-box-shadow:    inset 0 0 0px white;
+  -webkit-box-shadow: inset 0 0 0px white;
+  box-shadow:         inset 0 0 0px white;
+}
+.btn-static-encours {
+  background-color: white;
+  border: 1px solid lightgrey;
+  cursor: default;
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}
+.btn-static-encours:active {
+  -moz-box-shadow:    inset 0 0 0px white;
+  -webkit-box-shadow: inset 0 0 0px white;
+  box-shadow:         inset 0 0 0px white;
+}
+
+ 

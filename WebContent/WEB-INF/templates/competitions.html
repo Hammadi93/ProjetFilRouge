@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="base :: head" />
+<body>
+	<!-- Navigation -->
+	<div th:replace="base :: navigation"></div>
+
+	<!-- Page Content -->
+	<div class="container">
+		<div th:replace="base :: welcomeMessage"></div>
+		<!--  Row -->
+		<div class="row">
+			<div class="col-lg-12 ">
+				<h2 class="my-4">Competitions</h2>
+			</div>
+				<div class="col-lg-6 text-center competition" th:each="competition  : ${listCompetition}">
+					<a id="comp" th:href="@{/poulles/}+${competition.idCompetition}">
+						<img class="rounded-circle img-fluid d-block mx-auto"
+						 th:src="@{/resources/img/} + ${competition.libelleCompetition}+'.png'" alt="" />
+						<h3 th:text="${competition.libelleCompetition}">Competition</h3>
+					</a>
+				</div>
+		</div>
+	</div>
+	<!-- /.container -->
+	<!-- Footer -->
+	<footer th:replace="base :: footer"></footer>
+</body>
+</html>

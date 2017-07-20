@@ -1,0 +1,26 @@
+2017-03-15 14:09:47 ERROR PronosticMetier:145 - wahya naroiiiiiiiiiii
+2017-03-15 14:10:24 INFO  PronosticMetier:145 - wahya narii wahya sidna ya lmaliiiiiik
+2017-03-15 16:46:59 ERROR PronosticsDaoImp:41 - createPronostic SQLException Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.PRONOSTIC(IDPRONOSTIC)"; SQL statement:
+insert into pronostic values(?,?,?,?,?,?) [23505-192]
+2017-03-15 16:47:46 ERROR PronosticsDaoImp:41 - createPronostic SQLException Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.PRONOSTIC(IDPRONOSTIC)"; SQL statement:
+insert into pronostic values(?,?,?,?,?,?) [23505-192]
+2017-03-15 16:48:05 ERROR PronosticsDaoImp:41 - createPronostic SQLException Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.PRONOSTIC(IDPRONOSTIC)"; SQL statement:
+insert into pronostic values(?,?,?,?,?,?) [23505-192]
+2017-03-15 16:48:26 ERROR PronosticsDaoImp:41 - createPronostic SQLException Referential integrity constraint violation: "FK_PRONOSTICPERSONNE: PUBLIC.PRONOSTIC FOREIGN KEY(IDPERSONNE) REFERENCES PUBLIC.PERSONNE(IDPERSONNE) (0)"; SQL statement:
+insert into pronostic values(?,?,?,?,?,?) [23506-192]
+2017-03-15 16:49:34 ERROR PronosticsDaoImp:41 - createPronostic SQLException Referential integrity constraint violation: "FK_PRONOSTICPERSONNE: PUBLIC.PRONOSTIC FOREIGN KEY(IDPERSONNE) REFERENCES PUBLIC.PERSONNE(IDPERSONNE) (0)"; SQL statement:
+insert into pronostic values(?,?,?,?,?,?) [23506-192]
+2017-03-15 16:51:31 ERROR PronosticsDaoImp:41 - createPronostic SQLException Referential integrity constraint violation: "FK_PRONOSTICPERSONNE: PUBLIC.PRONOSTIC FOREIGN KEY(IDPERSONNE) REFERENCES PUBLIC.PERSONNE(IDPERSONNE) (0)"; SQL statement:
+insert into pronostic values(?,?,?,?,?,?) [23506-192]
+2017-03-15 16:51:56 ERROR PronosticsDaoImp:41 - createPronostic SQLException Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.PRONOSTIC(IDPRONOSTIC)"; SQL statement:
+insert into pronostic values(?,?,?,?,?,?) [23505-192]
+2017-03-15 16:52:23 ERROR PronosticsDaoImp:41 - createPronostic SQLException Referential integrity constraint violation: "FK_PRONOSTICPERSONNE: PUBLIC.PRONOSTIC FOREIGN KEY(IDPERSONNE) REFERENCES PUBLIC.PERSONNE(IDPERSONNE) (0)"; SQL statement:
+insert into pronostic values(?,?,?,?,?,?) [23506-192]
+2017-03-15 16:52:35 ERROR PronosticsDaoImp:41 - createPronostic SQLException Referential integrity constraint violation: "FK_PRONOSTICPERSONNE: PUBLIC.PRONOSTIC FOREIGN KEY(IDPERSONNE) REFERENCES PUBLIC.PERSONNE(IDPERSONNE) (0)"; SQL statement:
+insert into pronostic values(?,?,?,?,?,?) [23506-192]
+2017-03-15 16:52:48 ERROR PronosticsDaoImp:41 - createPronostic SQLException Referential integrity constraint violation: "FK_PRONOSTICPERSONNE: PUBLIC.PRONOSTIC FOREIGN KEY(IDPERSONNE) REFERENCES PUBLIC.PERSONNE(IDPERSONNE) (0)"; SQL statement:
+insert into pronostic values(?,?,?,?,?,?) [23506-192]
+2017-03-15 17:10:22 ERROR PronosticsDaoImp:41 - createPronostic SQLException Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.PRONOSTIC(IDPRONOSTIC)"; SQL statement:
+insert into pronostic values(?,?,?,?,?,?) [23505-192]
+2017-03-15 17:10:43 ERROR PronosticsDaoImp:41 - createPronostic SQLException Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.PRONOSTIC(IDPRONOSTIC)"; SQL statement:
+insert into pronostic values(?,?,?,?,?,?) [23505-192]

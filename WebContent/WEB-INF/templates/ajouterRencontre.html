@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="base :: head" />
+<body>
+	<div th:replace="base :: navigation"></div>
+	<div class="container">
+	<div th:replace="base :: welcomeMessage"></div>
+		<div class="row">
+			<div class="col-lg-12 ">
+				<h2 class="alert alert-success">Ajouter nouvelle rencontre:</h2>
+			</div>
+			<div class="col-lg-12 ">
+				<h4 th:utext="${erreur}"></h4>
+			</div>
+			<div class="col-lg-1 "></div>
+			<div class="col-lg-8 ">
+				<!--  Row -->
+				<form th:action="@{/rencontres/doSave}" method="post"
+					th:object="${rencontre}">
+					<div class="form-group row">
+						<label for="example-text-input" class="col-3 col-form-label">
+							Competition :</label>
+						<div class="col-9">
+							<select th:field="*{competition}" class="form-control"
+								id="exampleSelect1" name="competition">
+								<option th:each="comp : ${listCompetitions}"
+									th:value="${comp.idCompetition}"
+									th:text="${comp.libelleCompetition}"></option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="example-text-input" class="col-3 col-form-label">
+							Equipe1 :</label>
+						<div class="col-9">
+							<select th:field="*{equipe1}" class="form-control"
+								id="exampleSelect1" name="equipe1">
+								<option th:each="equipe1 : ${listEquipes}"
+									th:value="${equipe1.idEquipe}"
+									th:text="${equipe1.libelleEquipe}"></option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="example-text-input" class="col-3 col-form-label">
+							Equipe2 :</label>
+						<div class="col-9">
+							<select th:field="*{equipe2}" class="form-control"
+								id="exampleSelect1" name="equipe2">
+								<option th:each="equipe2 : ${listEquipes}"
+									th:value="${equipe2.idEquipe}"
+									th:text="${equipe2.libelleEquipe}"></option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="example-text-input" class="col-3 col-form-label">
+							Poulle :</label>
+						<div class="col-9">
+							<select class="form-control" id="exampleSelect1" name="poulle">
+								<option th:each="poulle : ${listPoulles}"
+									th:value="${poulle.idPoulle}" th:text="${poulle.libellePoulle}"></option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="example-datetime-local-input"
+							class="col-3 col-form-label"> Date Debut :</label>
+						<div class="col-9">
+							<input class="form-control" type="datetime" name="dateDebut"
+								value="2011/08/19 13:45" />
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="offset-sm-2 col-sm-10">
+							<button type="submit" class="btn btn-primary">Ajouter</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer th:replace="base :: footer"></footer>
+</body>
+</html>

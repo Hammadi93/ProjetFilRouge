@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="base :: head" />
+<body style="background-image:url(resources/img/bg.jpg)">
+	<h4 th:utext="${erreur}"></h4>
+	<div class="container" style="margin-top: 13%;">
+		<form class="form-signin" action="" method="post">
+			<h2 class="form-signin-heading" style="color: white;text-align: center;">S'authentifier</h2>
+			<label for="inputEmail" class="sr-only">Email</label> <input
+				type="email" name="user" id="inputEmail" class="form-control"
+				placeholder="Email address" required="true"/> <label
+				for="inputPassword" class="sr-only">Password</label> <input
+				type="password" name="password" id="inputPassword"
+				class="form-control" placeholder="Password" required="true"/>
+			<button class="btn btn-lg btn-primary btn-block" type="submit">S'enregistrer</button>
+		</form>
+	</div>
+	<!-- /container -->
+</body>
+</html>
